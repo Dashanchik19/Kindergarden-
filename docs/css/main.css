@@ -1039,6 +1039,12 @@ video {
   overflow: hidden;
 }
 .about__wrapper h1 {
+  /* opacity: 1;
+  visibility: visible;
+  transition: opacity 1s ease-in-out; */
+}
+
+.about__title {
   position: relative;
   cursor: pointer;
   line-height: 40px;
@@ -1050,9 +1056,17 @@ video {
   display: flex;
   align-items: center;
   font-size: clamp(1.25rem, 0.842rem + 2.04vw, 2.5rem);
+}
+
+.element-animation {
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.element-show {
   opacity: 1;
-  visibility: visible;
-  transition: opacity 0.24s ease-in-out;
+  transform: translateY(0px);
 }
 
 .about .box div {
@@ -1692,10 +1706,7 @@ video {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.353);
 }
-.offers h1,
 .offers__item h3 {
-  cursor: pointer;
-  font-weight: 700;
   opacity: 1;
   visibility: visible;
   transition: opacity 0.24s ease-in-out;
@@ -1706,6 +1717,8 @@ video {
   margin-bottom: 50px;
   color: #fff;
   width: 100%;
+  cursor: pointer;
+  font-weight: 700;
   font-size: clamp(1.25rem, 0.842rem + 2.04vw, 2.5rem);
 }
 .offers__list {
@@ -1891,9 +1904,9 @@ video {
   display: flex;
   align-items: center;
   font-size: clamp(1.25rem, 0.842rem + 2.04vw, 2.5rem);
-  opacity: 1;
+  /* opacity: 1;
   visibility: visible;
-  transition: opacity 0.24s ease-in-out;
+  transition: opacity 0.24s ease-in-out; */
 }
 .programs__text h1::before {
   content: "";
@@ -2180,39 +2193,50 @@ video {
 .teachers__card:nth-child(1) {
   background-color: #1a7ed0;
   display: block;
+  transition-delay: 0.2s;
 }
 .teachers__card:nth-child(2) {
   background-color: #c11ad0;
   display: block;
+  transition-delay: 0.5s;
 }
 .teachers__card:nth-child(3) {
   background-color: #99d01a;
   display: block;
+  transition-delay: 0.8s;
 }
 .teachers__card:nth-child(4) {
   background-color: #d0351a;
   display: block;
+  transition-delay: 1s;
 }
 .teachers__card:nth-child(5) {
   background-color: #99d01a;
+  transition-delay: 0.2s;
 }
 .teachers__card:nth-child(6) {
   background-color: #c11ad0;
+  transition-delay: 0.5s;
 }
 .teachers__card:nth-child(7) {
   background-color: #d0351a;
+  transition-delay: 0.8s;
 }
 .teachers__card:nth-child(8) {
   background-color: #1a7ed0;
+  transition-delay: 1s;
 }
 .teachers__card:nth-child(9) {
   background-color: #99d01a;
+  transition-delay: 1.2s;
 }
 .teachers__card:nth-child(10) {
   background-color: #c11ad0;
+  transition-delay: 0.2s;
 }
 .teachers__card:nth-child(11) {
   background-color: #d0351a;
+  transition-delay: 0.5s;
 }
 .teachers__card img {
   position: absolute;
@@ -2554,9 +2578,9 @@ video {
   color: #313363;
   align-items: center;
   font-size: clamp(1.25rem, 0.842rem + 2.04vw, 2.5rem);
-  opacity: 1;
+  /* opacity: 1;
   visibility: visible;
-  transition: opacity 0.24s ease-in-out;
+  transition: opacity 0.24s ease-in-out; */
 }
 .gallery h1::before {
   width: 100px;
