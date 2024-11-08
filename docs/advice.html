@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дитячий садочок "Вулик" ЗДО №28 Луцького району Волинської області</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css"
+        integrity="sha512-kwJUhJJaTDzGp6VTPBbMQWBFUof6+pv0SM3s8fo+E6XnPmVmtfwENK0vHYup3tsYnqHgRDoBDTJWoq7rnQw2+g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../docs/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="icon" type="image/png" href="./img/logo-head.webp">
+</head>
+
+<body>
+    <div class="advice">
+        <!DOCTYPE html>
+
+        <body>
+            <nav class="nav">
+                <div class="container">
+                    <div class="nav__wrapper"> <a href="../index.html" class="nav__logo navLink">Дитячий садок
+                            "Вулик"</a><span class="nav__wasp"></span>
+                        <div class="menu">
+                            <div class="menu__head">
+                                <div class="nav__logo">Вулик</div> <button type="button"
+                                    class="menu-close-btn"></button>
+                            </div>
+                            <ul>
+                                <li><a href="#about" class="aboutMenu">Про нас</a></li>
+                                <li><a href="#offer" class="offersMenu">Пропозиції</a></li>
+                                <li><a href="#info" class="scheduleMenu">Режим дня</a></li>
+                                <li><a href="#teacher" class="teachersMenu">Вихователі</a></li>
+                                <li><a href="#program" class="programsMenu">Програма</a></li>
+                                <li class="dropdown"> <a href="#" class="parentsMenu">Батькам</a><i
+                                        class="ri-arrow-down-s-line"></i>
+                                    <ul class="sub-menu">
+                                        <li class="dropdown"> <a href="parents.html" class="navLink forParents"
+                                                data-type="parents" data-load="true"><span>Для Вас, Батьки</span></a><i
+                                                class="ri-arrow-down-s-line"></i>
+                                            <ul class="sub-menu sub-menu-right">
+                                                <li><a href="parents.html" class="rulesAdmission"><span>Правила
+                                                            зарахування до закладу</span></a></li>
+                                                <li><a href="parents.html"
+                                                        class="pointConsultation"><span>Консультативний пункт</span></a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown"> <a href="public.html" class="navLink pulicInfo"
+                                                data-type="public" data-load="true"><span>Публічна
+                                                    інформація</span></a><i class="ri-arrow-down-s-line"></i>
+                                            <ul class="sub-menu sub-menu-right">
+                                                <li><a href="public.html" class="charter"><span>Статут</span></a></li>
+                                                <li><a href="public.html" class="budget"><span>Кошторис</span></a></li>
+                                                <li><a href="public.html" class="programsEducation"><span>Освітні
+                                                            програми</span></a></li>
+                                                <li><a href="public.html" class="languageEducation"><span>Мова
+                                                            освітнього процесу</span></a></li>
+                                                <li><a href="public.html" class="annualReport"><span>Річний
+                                                            звіт</span></a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#gallery" class="galleryMenu">Галерея</a></li>
+                                <li class="dropdown"> <a href="#" class="baseMenu">Довідкова база</a><i
+                                        class="ri-arrow-down-s-line"></i>
+                                    <ul class="sub-menu">
+                                        <li class="dropdown"> <a href="groups.html" class="networkGroups"><span>Мережа
+                                                    груп</span></a></li>
+                                        <li class="dropdown"> <a href="legislation.html"
+                                                class="navLink legislativeFramework" data-type="legislation"
+                                                data-load="true"><span>Нормативно-правова база</span></a><i
+                                                class="ri-arrow-down-s-line"></i>
+                                            <ul class="sub-menu sub-menu-left">
+                                                <li><a href="legislation.html" class="lawsUkraine"><span>Закони
+                                                            України</span></a></li>
+                                                <li><a href="legislation.html" class="cabinetMinisters"><span>Постанови
+                                                            КМУ</span></a></li>
+                                                <li><a href="legislation.html" class="scienceMeetings"><span>Наради
+                                                            МОН</span></a></li>
+                                                <li><a href="legislation.html" class="scienceLetters"><span>Листи
+                                                            МОН</span></a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown"> <a href="advice.html"
+                                                class="navLink expertAdvice"><span>Поради фахівців</span></a><i
+                                                class="ri-arrow-down-s-line"></i>
+                                            <ul class="sub-menu sub-menu-left">
+                                                <li><a href="advice.html" class="psychologist"><span>Практичний
+                                                            психолог</span></a></li>
+                                                <li><a href="advice.html" class="peInstructor"><span>Інструктор з
+                                                            фізичного виховання</span></a></li>
+                                                <li><a href="advice.html" class="musicInstructor"><span>Керівник
+                                                            музичний</span></a></li>
+                                                <li><a href="advice.html" class="nurseMedical"><span>Сестра
+                                                            медична</span></a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#footer" class="contactsMenu">Контакти</a></li>
+                            </ul>
+                        </div>
+                        <div class="nav-right container"> <button type="button" class="nav-open-menu">
+                                <div class="line line-1"></div>
+                                <div class="line line-2"></div>
+                                <div class="line line-3"></div>
+                            </button></div>
+                    </div>
+                </div>
+            </nav>
+        </body>
+        <section class="social">
+            <div class="social__map"><a href="#!" class="social__map1"><i class="ri-map-pin-line"></i>
+                    <div class="social__hideBlock" id="map"></div>
+                </a></div><a href="#!" class="social__inst"><i class="ri-instagram-line"></i></a><a
+                href="https://www.facebook.com/profile.php?id=100035120799894" target="_blank"
+                class="social__facebook"><i class="ri-facebook-line"></i></a><a
+                href="https://www.youtube.com/channel/UC8O8dt3Q4MQjUlRnzGh3XqA" target="_blank"
+                class="social__youtube"><i class="ri-youtube-fill"></i></a>
+        </section>
+        <div class="container">
+            <nav id="breadcrumb-container">
+                <ol class="breadcrumbnav">
+                    <li><a href="../index.html">Головна</a></li>
+                    <li><a href="#">Довідкова база</a></li>
+                    <li>Поради фахівців</li>
+                </ol>
+            </nav> <span class="headerParents__title">Комунальний заклад "Луцький заклад дошкільної освіти №28"</span>
+            <div class="advice__blocks">
+                <div class="advice__buttons"> <button class="advice__btn active">Інструктор з фізичного
+                        виховання</button> <button class="advice__btn">Практичний психолог</button> <button
+                        class="advice__btn">Музичний керівник</button> <button class="advice__btn">Сестра
+                        медична</button> <button class="advice__btn">Вчитель-логопед</button>
+                    <div class="advice__line"></div>
+                </div>
+                <div class="pages">
+                    <div class="page active">
+                        <div class="page__wrapper">
+                            <div class="page__left"> <img src="./docs/img/user.jpg" alt="">
+                                <h2>Семенюк Марія Павлівна</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod inventore ullam
+                                    necessitatibus. Libero quas voluptatibus laborum error, voluptas alias delectus
+                                    pariatur a rem, recusandae eligendi obcaecati, asperiores sunt dicta dolorum!</p>
+                            </div>
+                        </div>
+                        <h1 class="page-h1">Фізичне виховання</h1>
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper" id="custom-events-demo"> <a class="swiper-slide"
+                                    href="https://swiperjs.com/demos/images/nature-1.jpg"><img
+                                        src="https://swiperjs.com/demos/images/nature-1.jpg" /></a> <a
+                                    class="swiper-slide" href="https://swiperjs.com/demos/images/nature-2.jpg"><img
+                                        src="https://swiperjs.com/demos/images/nature-2.jpg" /></a> <a
+                                    class="swiper-slide" href="https://swiperjs.com/demos/images/nature-3.jpg"><img
+                                        src="https://swiperjs.com/demos/images/nature-3.jpg" /></a> <a
+                                    class="swiper-slide" href="https://swiperjs.com/demos/images/nature-4.jpg"><img
+                                        src="https://swiperjs.com/demos/images/nature-4.jpg" /></a> <a
+                                    class="swiper-slide" href="https://swiperjs.com/demos/images/nature-5.jpg"><img
+                                        src="https://swiperjs.com/demos/images/nature-5.jpg" /></a> <a
+                                    class="swiper-slide" href="https://swiperjs.com/demos/images/nature-6.jpg"><img
+                                        src="https://swiperjs.com/demos/images/nature-6.jpg" /></a> <a
+                                    class="swiper-slide" href="https://swiperjs.com/demos/images/nature-7.jpg"><img
+                                        src="https://swiperjs.com/demos/images/nature-7.jpg" /></a> <a
+                                    class="swiper-slide" href="https://swiperjs.com/demos/images/nature-8.jpg"><img
+                                        src="https://swiperjs.com/demos/images/nature-8.jpg" /></a> <a
+                                    class="swiper-slide" href="https://swiperjs.com/demos/images/nature-9.jpg"><img
+                                        src="https://swiperjs.com/demos/images/nature-9.jpg" /></a></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <div class="page__events rede">
+                            <h1>Цікаві поради з фізичного виховання</h1>
+                            <div class="rede__blocks"> <a class="rede__block"
+                                    href="https://dnz6.varashosvita.rv.ua/pedagogichni-pratsivny-ky-zakladu-2/desyat-porad-bat-kam-pry-organizatsiyi-roboty-z-fizy-chnoyi-kul-tury/">Десять
+                                    порад батькам при організації роботи з фізичної культури</a> <a class="rede__block"
+                                    href="https://7a0c0653-dc36-4429-a10b-f1e9659d743e.filesusr.com/ugd/ca4cc1_109049a6ddd3425ca3a0786edb120b44.pdf">Веселі
+                                    ігри на асфальті</a> <a class="rede__block"
+                                    href="https://vseosvita.ua/library/fizicne-vihovanna-ditej-doskilnogo-viku-397550.html">Фізичне
+                                    виховання дітей дошкільного віку</a> <span>. . .</span></div>
+                        </div>
+                    </div>
+                    <div class="page">
+                        <div class="page__wrapper">
+                            <div class="page__left"> <img src="./docs/img/user.jpg" alt="">
+                                <h2>Семенюк Марія Павлівна</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod inventore ullam
+                                    necessitatibus. Libero quas voluptatibus laborum error, voluptas alias delectus
+                                    pariatur a rem, recusandae eligendi obcaecati, asperiores sunt dicta dolorum!</p>
+                            </div>
+                        </div>
+                        <div class="page__events rede">
+                            <h1>Цікаві поради з психології</h1>
+                            <div class="rede__blocks"> <a class="rede__block"
+                                    href="https://dnz6.varashosvita.rv.ua/pedagogichni-pratsivny-ky-zakladu-2/desyat-porad-bat-kam-pry-organizatsiyi-roboty-z-fizy-chnoyi-kul-tury/">Десять
+                                    порад батькам при організації роботи з фізичної культури</a> <a class="rede__block"
+                                    href="https://7a0c0653-dc36-4429-a10b-f1e9659d743e.filesusr.com/ugd/ca4cc1_109049a6ddd3425ca3a0786edb120b44.pdf">Веселі
+                                    ігри на асфальті</a> <a class="rede__block"
+                                    href="https://vseosvita.ua/library/fizicne-vihovanna-ditej-doskilnogo-viku-397550.html">Фізичне
+                                    виховання дітей дошкільного віку</a> <span>. . .</span></div>
+                        </div>
+                    </div>
+                    <div class="page">
+                        <div class="page__wrapper">
+                            <div class="page__left"> <img src="./docs/img/user.jpg" alt="">
+                                <h2>Семенюк Марія Павлівна</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod inventore ullam
+                                    necessitatibus. Libero quas voluptatibus laborum error, voluptas alias delectus
+                                    pariatur a rem, recusandae eligendi obcaecati, asperiores sunt dicta dolorum!</p>
+                            </div>
+                        </div>
+                        <div class="page__events rede">
+                            <h1>Цікаві поради з музичного виховання</h1>
+                            <div class="rede__blocks"> <a class="rede__block"
+                                    href="https://dnz6.varashosvita.rv.ua/pedagogichni-pratsivny-ky-zakladu-2/desyat-porad-bat-kam-pry-organizatsiyi-roboty-z-fizy-chnoyi-kul-tury/">Десять
+                                    порад батькам при організації роботи з фізичної культури</a> <a class="rede__block"
+                                    href="https://7a0c0653-dc36-4429-a10b-f1e9659d743e.filesusr.com/ugd/ca4cc1_109049a6ddd3425ca3a0786edb120b44.pdf">Веселі
+                                    ігри на асфальті</a> <a class="rede__block"
+                                    href="https://vseosvita.ua/library/fizicne-vihovanna-ditej-doskilnogo-viku-397550.html">Фізичне
+                                    виховання дітей дошкільного віку</a> <span>. . .</span></div>
+                        </div>
+                    </div>
+                    <div class="page">
+                        <div class="page__wrapper">
+                            <div class="page__left"> <img src="./docs/img/user.jpg" alt="">
+                                <h2>Семенюк Марія Павлівна</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod inventore ullam
+                                    necessitatibus. Libero quas voluptatibus laborum error, voluptas alias delectus
+                                    pariatur a rem, recusandae eligendi obcaecati, asperiores sunt dicta dolorum!</p>
+                            </div>
+                        </div>
+                        <div class="page__events rede">
+                            <h1>Цікаві поради з медичного виховання</h1>
+                            <div class="rede__blocks"> <a class="rede__block"
+                                    href="https://dnz6.varashosvita.rv.ua/pedagogichni-pratsivny-ky-zakladu-2/desyat-porad-bat-kam-pry-organizatsiyi-roboty-z-fizy-chnoyi-kul-tury/">Десять
+                                    порад батькам при організації роботи з фізичної культури</a> <a class="rede__block"
+                                    href="https://7a0c0653-dc36-4429-a10b-f1e9659d743e.filesusr.com/ugd/ca4cc1_109049a6ddd3425ca3a0786edb120b44.pdf">Веселі
+                                    ігри на асфальті</a> <a class="rede__block"
+                                    href="https://vseosvita.ua/library/fizicne-vihovanna-ditej-doskilnogo-viku-397550.html">Фізичне
+                                    виховання дітей дошкільного віку</a> <span>. . .</span></div>
+                        </div>
+                    </div>
+                    <div class="page">
+                        <div class="page__wrapper">
+                            <div class="page__left"> <img src="./docs/img/user.jpg" alt="">
+                                <h2>Семенюк Марія Павлівна</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod inventore ullam
+                                    necessitatibus. Libero quas voluptatibus laborum error, voluptas alias delectus
+                                    pariatur a rem, recusandae eligendi obcaecati, asperiores sunt dicta dolorum!</p>
+                            </div>
+                        </div>
+                        <div class="page__events rede">
+                            <h1>Цікаві поради з медичного виховання</h1>
+                            <div class="rede__blocks"> <a class="rede__block"
+                                    href="https://dnz6.varashosvita.rv.ua/pedagogichni-pratsivny-ky-zakladu-2/desyat-porad-bat-kam-pry-organizatsiyi-roboty-z-fizy-chnoyi-kul-tury/">Десять
+                                    порад батькам при організації роботи з фізичної культури</a> <a class="rede__block"
+                                    href="https://7a0c0653-dc36-4429-a10b-f1e9659d743e.filesusr.com/ugd/ca4cc1_109049a6ddd3425ca3a0786edb120b44.pdf">Веселі
+                                    ігри на асфальті</a> <a class="rede__block"
+                                    href="https://vseosvita.ua/library/fizicne-vihovanna-ditej-doskilnogo-viku-397550.html">Фізичне
+                                    виховання дітей дошкільного віку</a> <span>. . .</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="social">
+        <div class="social__map"><a href="#!" class="social__map1"><i class="ri-map-pin-line"></i>
+                <div class="social__hideBlock" id="map"></div>
+            </a></div><a href="#!" class="social__inst"><i class="ri-instagram-line"></i></a><a
+            href="https://www.facebook.com/profile.php?id=100035120799894" target="_blank" class="social__facebook"><i
+                class="ri-facebook-line"></i></a><a href="https://www.youtube.com/channel/UC8O8dt3Q4MQjUlRnzGh3XqA"
+            target="_blank" class="social__youtube"><i class="ri-youtube-fill"></i></a>
+    </section>
+    <!DOCTYPE html>
+    <section class="footer" id="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__links"> <a href="#!" class="footer__logo contactsLogo">Дитячий садок №28</a><span
+                        class="footer__wasp"></span>
+                    <div class="footer__social"><a href="#!" class="footer__inst"><i
+                                class="ri-instagram-line"></i></a><a
+                            href="https://www.facebook.com/profile.php?id=100035120799894" target="_blank"
+                            class="footer__facebook"><i class="ri-facebook-line"></i></a><a
+                            href="https://www.youtube.com/channel/UC8O8dt3Q4MQjUlRnzGh3XqA" target="_blank"
+                            class="footer__youtube"><i class="ri-youtube-fill"></i></a></div>
+                </div>
+                <div class="footer__contacts">
+                    <h4 class="contactsOur">Наші контакти</h4>
+                    <div class="contacts">
+                        <div class="contact-item">
+                            <p>+38 033 226 46 93</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__graph">
+                    <h4 class="contactsSchedule">Графік роботи</h4>
+                    <div class="graphs">
+                        <p><span>Пн-Пт: (Mon-Fri)</span> 7:40–19:30</p>
+                        <p><span>Сб: (Sat)</span> Вихідний (Weekend)</p>
+                        <p><span>Нд (Sun) —</span> Вихідний (Weekend)</p>
+                    </div>
+                </div>
+                <div class="footer__adress">
+                    <h4 class="contactsAdress">Місце розташування закладу</h4>
+                    <div class="address1">
+                        <p class="address">Волинська область, місто Луцьк, вул. Володимира Івасюка</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><iframe class="footer__map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31149.88862090032!2d25.297637217106615!3d50.742652972262036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47259998b02296dd%3A0xcea194cb635692c8!2z0JTQuNGC0Y_Rh9C40Lkg0YHQsNC00L7QuiDihJYyOCAi0JLRg9C70LjQuiI!5e0!3m2!1suk!2sua!4v1713211018711!5m2!1suk!2sua"
+        width="350" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            initialSlide: Math.floor(document.querySelectorAll('.swiper-slide').length / 2),
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
+    <script src="./js/advice.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="./js/translations.bundle.js"></script>
+    <script src="./docs/js/index.bundle.js" async></script>
+</body>
+
+</html>

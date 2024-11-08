@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дитячий садочок "Вулик" ЗДО №28 Луцького району Волинської області</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css"
+        integrity="sha512-kwJUhJJaTDzGp6VTPBbMQWBFUof6+pv0SM3s8fo+E6XnPmVmtfwENK0vHYup3tsYnqHgRDoBDTJWoq7rnQw2+g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./docs/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="icon" type="image/png" href="./img/logo-head.webp">
+</head>
+
+<body>
+    <!DOCTYPE html>
+
+    <body>
+        <nav class="nav">
+            <div class="container">
+                <div class="nav__wrapper"> <a href="index.html" class="nav__logo navLink">Дитячий садок "Вулик"</a><span
+                        class="nav__wasp"></span>
+                    <div class="menu">
+                        <div class="menu__head">
+                            <div class="nav__logo">Вулик</div> <button type="button" class="menu-close-btn"></button>
+                        </div>
+                        <ul>
+                            <li><a href="#about" class="aboutMenu">Про нас</a></li>
+                            <li><a href="#offer" class="offersMenu">Пропозиції</a></li>
+                            <li><a href="#info" class="scheduleMenu">Режим дня</a></li>
+                            <li><a href="#teacher" class="teachersMenu">Вихователі</a></li>
+                            <li><a href="#program" class="programsMenu">Програма</a></li>
+                            <li class="dropdown"> <a href="#" class="parentsMenu">Батькам</a><i
+                                    class="ri-arrow-down-s-line"></i>
+                                <ul class="sub-menu">
+                                    <li class="dropdown"> <a href="./docs/parents.html" class="navLink forParents"
+                                            data-type="parents" data-load="true"><span>Для Вас, Батьки</span></a><i
+                                            class="ri-arrow-down-s-line"></i>
+                                        <ul class="sub-menu sub-menu-right">
+                                            <li><a href="./docs/parents.html" class="rulesAdmission"><span>Правила
+                                                        зарахування
+                                                        до закладу</span></a></li>
+                                            <li><a href="./docs/parents.html"
+                                                    class="pointConsultation"><span>Консультативний
+                                                        пункт</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown"> <a href="./docs/public.html" class="navLink pulicInfo"
+                                            data-type="public" data-load="true"><span>Публічна інформація</span></a><i
+                                            class="ri-arrow-down-s-line"></i>
+                                        <ul class="sub-menu sub-menu-right">
+                                            <li><a href="./docs/public.html" class="charter"><span>Статут</span></a>
+                                            </li>
+                                            <li><a href="./docs/public.html" class="budget"><span>Кошторис</span></a>
+                                            </li>
+                                            <li><a href="./docs/public.html" class="programsEducation"><span>Освітні
+                                                        програми</span></a></li>
+                                            <li><a href="./docs/public.html" class="languageEducation"><span>Мова
+                                                        освітнього
+                                                        процесу</span></a></li>
+                                            <li><a href="./docs/public.html" class="annualReport"><span>Річний
+                                                        звіт</span></a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#gallery" class="galleryMenu">Галерея</a></li>
+                            <li class="dropdown"> <a href="#" class="baseMenu">Довідкова база</a><i
+                                    class="ri-arrow-down-s-line"></i>
+                                <ul class="sub-menu">
+                                    <li class="dropdown"> <a href="./docs/groups.html"
+                                            class="networkGroups"><span>Мережа
+                                                груп</span></a></li>
+                                    <li class="dropdown"> <a href="legislation.html"
+                                            class="navLink legislativeFramework" data-type="legislation"
+                                            data-load="true"><span>Нормативно-правова база</span></a><i
+                                            class="ri-arrow-down-s-line"></i>
+                                        <ul class="sub-menu sub-menu-left">
+                                            <li><a href="legislation.html" class="lawsUkraine"><span>Закони
+                                                        України</span></a></li>
+                                            <li><a href="legislation.html" class="cabinetMinisters"><span>Постанови
+                                                        КМУ</span></a></li>
+                                            <li><a href="legislation.html" class="scienceMeetings"><span>Наради
+                                                        МОН</span></a></li>
+                                            <li><a href="legislation.html" class="scienceLetters"><span>Листи
+                                                        МОН</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown"> <a href="./docs/advice.html"
+                                            class="navLink expertAdvice"><span>Поради фахівців</span></a><i
+                                            class="ri-arrow-down-s-line"></i>
+                                        <ul class="sub-menu sub-menu-left">
+                                            <li><a href="./docs/advice.html" class="psychologist"><span>Практичний
+                                                        психолог</span></a></li>
+                                            <li><a href="./docs/advice.html" class="peInstructor"><span>Інструктор з
+                                                        фізичного
+                                                        виховання</span></a></li>
+                                            <li><a href="./docs/advice.html" class="musicInstructor"><span>Керівник
+                                                        музичний</span></a></li>
+                                            <li><a href="./docs/advice.html" class="nurseMedical"><span>Сестра
+                                                        медична</span></a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#footer" class="contactsMenu">Контакти</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-right container"> <button type="button" class="nav-open-menu">
+                            <div class="line line-1"></div>
+                            <div class="line line-2"></div>
+                            <div class="line line-3"></div>
+                        </button></div>
+                </div>
+            </div>
+        </nav>
+    </body>
+    <section class="social">
+        <div class="social__map"><a href="#!" class="social__map1"><i class="ri-map-pin-line"></i>
+                <div class="social__hideBlock" id="map"></div>
+            </a></div><a href="#!" class="social__inst"><i class="ri-instagram-line"></i></a><a
+            href="https://www.facebook.com/profile.php?id=100035120799894" target="_blank" class="social__facebook"><i
+                class="ri-facebook-line"></i></a><a href="https://www.youtube.com/channel/UC8O8dt3Q4MQjUlRnzGh3XqA"
+            target="_blank" class="social__youtube"><i class="ri-youtube-fill"></i></a>
+    </section>
+    <!DOCTYPE html>
+    <section class="header" id="general">
+        <div class="carousel">
+            <div class="carousel__list">
+                <div class="carousel__item">
+                    <div class="header__video-slider"><video class="video-slider curve active"
+                            src="./docs/img/background-video.mp4" autoplay muted loop></video></div>
+                    <div class="carousel__content">
+                        <div class="local">місто Луцьк | Волинська область</div><br> <span class="title">Вас вітає
+                            дошкільний навчальний заклад</span> <span class="titleNumber">№28 Вулик</span>
+                        <div class="titleinfo1">компенсуючого типу для дітей з вадами розвитку</div>
+                    </div>
+                </div>
+                <div class="carousel__item">
+                    <div class="header__video-slider"><video class="video-slider curve"
+                            src="./docs/img/background-bee2.mp4" autoplay muted loop></video></div>
+                    <div class="carousel__content">
+                        <div class="local local1">місто Луцьк | Волинська область</div><br> <span
+                            class="title title-1">Вас вітає дошкільний навчальний заклад</span> <span
+                            class="titleNumber">№28 Вулик</span>
+                        <div class="titleinfo1 titleinfo2">компенсуючого типу для дітей з вадами розвитку</div>
+                    </div>
+                </div>
+            </div>
+            <div class="thumbnail">
+                <div class="thumbnail__item"></div>
+                <div class="thumbnail__item"></div>
+            </div>
+            <div class="arrows"> <button id="prev"><i class="ri-arrow-left-line"></i></button> <button id="next"><i
+                        class="ri-arrow-right-line"></i></button></div>
+            <div class="time"></div>
+        </div>
+    </section>
+    <!DOCTYPE html>
+    <section class="about" id="about"><svg class="about-svg" id="wave" style="transform:rotate(0deg); transition: 0.3s"
+            viewBox="0 0 1440 300" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+                    <stop stop-color="rgba(61, 66, 141, 1)" offset="0%"></stop>
+                    <stop stop-color="rgba(61, 66, 141, 1)" offset="100%"></stop>
+                </linearGradient>
+            </defs>
+            <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)"
+                d="M0 60 40 55C80 50 160 40 240 75 320 110 400 190 480 205 560 220 640 170 720 170 800 170 880 220 960 205 1040 190 1120 110 1200 100 1280 90 1360 150 1440 180 1520 210 1600 210 1680 180 1760 150 1840 90 1920 65 2000 40 2080 50 2160 70 2240 90 2320 120 2400 130 2480 140 2560 130 2640 145 2720 160 2800 200 2880 225 2960 250 3040 260 3120 220 3200 180 3280 90 3360 70 3440 50 3520 100 3600 140 3680 180 3760 210 3840 220 3920 230 4000 220 4080 200 4160 180 4240 150 4320 150 4400 150 4480 180 4560 170 4640 160 4720 110 4800 80 4880 50 4960 40 5040 50 5120 60 5200 90 5280 125 5360 160 5440 200 5520 180 5600 160 5680 80 5720 40L5760 0 5760 300 5720 300C5680 300 5600 300 5520 300 5440 300 5360 300 5280 300 5200 300 5120 300 5040 300 4960 300 4880 300 4800 300 4720 300 4640 300 4560 300 4480 300 4400 300 4320 300 4240 300 4160 300 4080 300 4000 300 3920 300 3840 300 3760 300 3680 300 3600 300 3520 300 3440 300 3360 300 3280 300 3200 300 3120 300 3040 300 2960 300 2880 300 2800 300 2720 300 2640 300 2560 300 2480 300 2400 300 2320 300 2240 300 2160 300 2080 300 2000 300 1920 300 1840 300 1760 300 1680 300 1600 300 1520 300 1440 300 1360 300 1280 300 1200 300 1120 300 1040 300 960 300 880 300 800 300 720 300 640 300 560 300 480 300 400 300 320 300 240 300 160 300 80 300 40 300L0 300Z">
+            </path>
+            <defs>
+                <linearGradient id="sw-gradient-1" x1="0" x2="0" y1="1" y2="0">
+                    <stop stop-color="rgba(82, 88, 180, 1)" offset="0%"></stop>
+                    <stop stop-color="rgba(82, 88, 180, 1)" offset="100%"></stop>
+                </linearGradient>
+            </defs>
+            <path style="transform:translate(0, 50px); opacity:0.9" fill="url(#sw-gradient-1)"
+                d="M0 120 40 125C80 130 160 140 240 150 320 160 400 170 480 185 560 200 640 220 720 200 800 180 880 120 960 85 1040 50 1120 40 1200 70 1280 100 1360 170 1440 170 1520 170 1600 100 1680 70 1760 40 1840 50 1920 60 2000 70 2080 80 2160 75 2240 70 2320 50 2400 80 2480 110 2560 190 2640 200 2720 210 2800 150 2880 130 2960 110 3040 130 3120 130 3200 130 3280 110 3360 110 3440 110 3520 130 3600 125 3680 120 3760 90 3840 100 3920 110 4000 160 4080 170 4160 180 4240 150 4320 135 4400 120 4480 120 4560 115 4640 110 4720 100 4800 80 4880 60 4960 30 5040 35 5120 40 5200 80 5280 125 5360 170 5440 220 5520 240 5600 260 5680 250 5720 245L5760 240 5760 300 5720 300C5680 300 5600 300 5520 300 5440 300 5360 300 5280 300 5200 300 5120 300 5040 300 4960 300 4880 300 4800 300 4720 300 4640 300 4560 300 4480 300 4400 300 4320 300 4240 300 4160 300 4080 300 4000 300 3920 300 3840 300 3760 300 3680 300 3600 300 3520 300 3440 300 3360 300 3280 300 3200 300 3120 300 3040 300 2960 300 2880 300 2800 300 2720 300 2640 300 2560 300 2480 300 2400 300 2320 300 2240 300 2160 300 2080 300 2000 300 1920 300 1840 300 1760 300 1680 300 1600 300 1520 300 1440 300 1360 300 1280 300 1200 300 1120 300 1040 300 960 300 880 300 800 300 720 300 640 300 560 300 480 300 400 300 320 300 240 300 160 300 80 300 40 300L0 300Z">
+            </path>
+        </svg>
+        <div class="about__wrapper">
+            <div class="box">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <div class="about__icon-bg">
+            <div></div>
+        </div>
+        <div class="container">
+            <div class="about__wrapper">
+                <h1 class="aboutTitle">Про наш садок</h1>
+                <div class="about__child">
+                    <div class="about__left"><span class="about__link" href="#"><i
+                                class="ri-arrow-left-line link-i"></i><i class="ri-arrow-right-line link-i"></i></span>
+                        <div class="about__content1 active animate__animated animate__slideInLeft">
+                            <p class="about__txt about1">Доброго дня! Ми раді вітати Вас на сторінці "Дитячого садка №28
+                                "Вулик" у Луцьку.</p>
+                        </div>
+                        <div class="about__content1 animate__animated animate__slideInLeft">
+                            <p class="about__txt about2">Садок "Вулик" - це сучасний заклад дошкільної освіти для дітей
+                                віком від 2 до 7 років. Ми пропонуємо індивідуальний підхід до кожної дитини та
+                                створюємо для них комфортні умови для розвитку та навчання.</p>
+                        </div>
+                        <div class="about__image active"> <img
+                                class="about__img animate__animated animate__fadeInLeftBig lazyload"
+                                src="./docs/img/dummy-image.gif"
+                                data-src="https://files.ratelist.top/uploads/images/bs/21889/photos/c7c79501f65fe139259d8a3d84bb59b3-original.webp">
+                        </div>
+                        <div class="about__image"> <img
+                                class="about__img animate__animated animate__fadeInLeftBig lazyload"
+                                src="./docs/img/dummy-image.gif" data-src="./docs/img/gallery/gallary-photo9.jpg"></div>
+                    </div>
+                    <div class="about__right">
+                        <div class="about__image1 active"> <img
+                                class="about__img animate__animated animate__fadeInRight lazyload"
+                                src="./docs/img/dummy-image.gif"
+                                data-src="https://lutsk24.com/images/11/11935/dytyachyy-sadok-28-vulyk-1.jpg"></div>
+                        <div class="about__image1"> <img
+                                class="about__img animate__animated animate__fadeInRight lazyload"
+                                src="./docs/img/dummy-image.gif" data-src="./docs/img/gallery/example11.jpg"></div>
+                        <div class="about__content active animate__animated animate__slideInRight">
+                            <p class="about__txt about3">Наш заклад розташований на вулиці Даньшина, 4, у затишному
+                                куточку міста, де панують спокій і безпека.</p>
+                        </div>
+                        <div class="about__content animate__animated animate__slideInRight">
+                            <p class="about__txt about4">Головною метою нашого садка є підготовка малюків до школи,
+                                підтримка фізичного і психічного здоров'я, розвиток соціальної адаптації та творчого
+                                мислення.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!DOCTYPE html>
+    <section class="offers lazyload" id="offer">
+        <div class="offers__icons">
+            <div></div>
+        </div>
+        <div class="offers__content-wrap">
+            <div class="container">
+                <h1 class="offers__title">Наші пропозиції</h1>
+                <div class="offers__blocks">
+                    <div class="offers__right swiper mySwiper">
+                        <ul class="offers__list swiper-wrapper">
+                            <li class="offers__item swiper-slide">
+                                <h3 class="offersHead1">Здорове харчування</h3>
+                                <p class="offersDescript1">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Autem minima quibusdam recusandae quam sit nesciunt, asperiores iure incidunt alias
+                                    quis.
+                                </p>
+                            </li>
+                            <li class="offers__item swiper-slide">
+                                <h3 class="offersHead2">Фізична активність</h3>
+                                <p class="offersDescript2">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Autem minima quibusdam recusandae quam sit nesciunt, asperiores iure incidunt alias
+                                    quis.
+                                </p>
+                            </li>
+                            <li class="offers__item swiper-slide">
+                                <h3 class="offersHead3">Розвиток творчих здібностей</h3>
+                                <p class="offersDescript3">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Autem minima quibusdam recusandae quam sit nesciunt, asperiores iure incidunt alias
+                                    quis.
+                                </p>
+                            </li>
+                            <li class="offers__item swiper-slide">
+                                <h3 class="offersHead4">Екологічна освіта</h3>
+                                <p class="offersDescript4">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Autem minima quibusdam recusandae quam sit nesciunt, asperiores iure incidunt alias
+                                    quis.
+                                </p>
+                            </li>
+                            <li class="offers__item swiper-slide">
+                                <h3 class="offersHead5">Інтелектуальний розвиток</h3>
+                                <p class="offersDescript5">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Autem minima quibusdam recusandae quam sit nesciunt, asperiores iure incidunt alias
+                                    quis.
+                                </p>
+                            </li>
+                            <li class="offers__item swiper-slide">
+                                <h3 class="offersHead6">Соціалізація та емоційний розвиток</h3>
+                                <p class="offersDescript6">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Autem minima quibusdam recusandae quam sit nesciunt, asperiores iure incidunt alias
+                                    quis.
+                                </p>
+                            </li>
+                        </ul>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+            <aside class="sidebar">
+                <div class="events">
+                    <h1 class="eventstitle"
+                        style="color: rgba(89, 104, 118, 0.656); font-size: 30px; justify-content: center;"></h1>
+                    <div class="sidebar__blocks">
+                        <div class="sidebar__block">
+                            <div class="sidebar__below"> <span class="eventsHead1">П'ЯТНИЦЯ 1 ВЕРЕСНЯ</span>
+                                <h5 class="eventsParty1">Перший дзвоник</h5>
+                                <div class="sidebar__time"><i class="ri-time-line"></i>
+                                    <p>09:00 - 10:00</p>
+                                </div>
+                                <div class="sidebar__place"><i class="ri-pushpin-line"></i>
+                                    <p class="eventsdestanition1">Луцьк</p>
+                                </div>
+                                <p class="event_desc"></p>
+                            </div>
+                        </div><br>
+                        <div class="sidebar__block">
+                            <div class="sidebar__below"> <span class="eventsHead2">П'ЯТНИЦЯ 1 ВЕРЕСНЯ</span>
+                                <h5 class="eventsParty2">Перший дзвоник</h5>
+                                <div class="sidebar__time"><i class="ri-time-line"></i>
+                                    <p>09:00 - 10:00</p>
+                                </div>
+                                <div class="sidebar__place"><i class="ri-pushpin-line"></i>
+                                    <p class="eventsdestanition2">Луцьк</p>
+                                </div>
+                                <p class="event_desc"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </section>
+    <!DOCTYPE html>
+
+    <body>
+        <section class="info" id="info">
+            <div class="container">
+                <div class="info__schedule">
+                    <h1 class="infoTitle">Режим дня</h1>
+                    <div class="schedule">
+                        <div class="schedule__list">
+                            <div class="schedule__item animate__animated ">
+                                <div class="schedule__titme">Молодша група: 7.30-8.30</div>
+                                <div class="schedule__titme">Середня група: 7.30-8.30</div>
+                                <div class="schedule__titme">Старша група: 7.30-8.30</div>
+                                <p class="schedule__descript scheduleDescrip1">Зустріч дітей на території закладу,
+                                    огляд, ігри, самостійна діяльність за вибором. Температурний скринінг</p>
+                            </div>
+                            <div class="schedule__item animate__animated ">
+                                <div class="schedule__titme">Молодша група: 8.15-8.20</div>
+                                <div class="schedule__titme">Середня група: 8.20-8.30</div>
+                                <div class="schedule__titme">Старша група: 8.00-8.10</div>
+                                <p class="schedule__descript scheduleDescrip2">Ранкова гімнастика</p>
+                            </div>
+                            <div class="schedule__item animate__animated ">
+                                <div class="schedule__titme">Молодша група: 8.30-9.00</div>
+                                <div class="schedule__titme">Середня група: 8.30-8.50</div>
+                                <div class="schedule__titme">Старша група: 8.30-8.50</div>
+                                <p class="schedule__descript scheduleDescrip3">Підготовка до сніданку, сніданок</p>
+                            </div>
+                            <div class="schedule__item">
+                                <div class="schedule__titme">Молодша група: 9.00-10.30</div>
+                                <div class="schedule__titme">Середня група: 8.50-10.40</div>
+                                <div class="schedule__titme">Старша група: 8.50-10.40</div>
+                                <p class="schedule__descript scheduleDescrip4">Ігри, підготовка до занять, заняття
+                                    колективні та індивідуальні, самостійна діяльність за вибором дітей</p>
+                            </div>
+                            <div class="schedule__item">
+                                <div class="schedule__titme">Молодша група: 10.30-12.00</div>
+                                <div class="schedule__titme">Середня група: 10.55-12.20</div>
+                                <div class="schedule__titme">Старша група: 10.40-12.20</div>
+                                <p class="schedule__descript scheduleDescrip5">Підготовка до прогулянки, прогулянка,
+                                    індивідуальні заняття</p>
+                            </div>
+                            <div class="schedule__item">
+                                <div class="schedule__titme">Молодша група: 12.00-13.00</div>
+                                <div class="schedule__titme">Середня група: 12.20-13.00</div>
+                                <div class="schedule__titme">Старша група: 12.20-13.00</div>
+                                <p class="schedule__descript scheduleDescrip6">Повернення з прогулянки, підготовка до
+                                    обіду, обід</p>
+                            </div>
+                            <div class="schedule__item">
+                                <div class="schedule__titme">Молодша група: 13.00-15.15</div>
+                                <div class="schedule__titme">Середня група: 13.00-15.00</div>
+                                <div class="schedule__titme">Старша група: 13.00-15.00</div>
+                                <p class="schedule__descript scheduleDescrip7">Підготовка до сну, сон</p>
+                            </div>
+                            <div class="schedule__item">
+                                <div class="schedule__titme">Молодша група: 15.15-15.30</div>
+                                <div class="schedule__titme">Середня група: 15.00-15.10</div>
+                                <div class="schedule__titme">Старша група: 15.00-15.10</div>v><p
+                                    class="schedule__descript scheduleDescrip8">Поступовий підйом,оздоровчі процедури
+                                </p>
+                            </div>
+                            <div class="schedule__item">
+                                <div class="schedule__titme">Молодша група: 15.30-17.00</div>
+                                <div class="schedule__titme">Середня група: 15.10-17.30</div>
+                                <div class="schedule__titme">Старша група: 15.10-17.00</div>
+                                <p class="schedule__descript scheduleDescrip9">Полуденок. Освітні заходи, самостійна
+                                    діяльність, ігри</p>
+                            </div>
+                            <div class="schedule__item">
+                                <div class="schedule__titme">Молодша група: 17.00-19.00</div>
+                                <div class="schedule__titme">Середня група: 17.30-18.30</div>
+                                <div class="schedule__titme">Старша група: 17.00-19.00</div>
+                                <p class="schedule__descript scheduleDescrip10">Підготовка до прогулянки, прогулянка,
+                                    ігри, самостійна діяльність</p>
+                            </div>
+                            <div class="schedule__item">
+                                <div class="schedule__titme">Молодша група: 19.00-19.30</div>
+                                <div class="schedule__titme">Середня група: 19.00-19.30</div>
+                                <div class="schedule__titme">Старша група: 19.00-19.30</div>
+                                <p class="schedule__descript scheduleDescrip11">Повернення з прогулянки, ігри,самостійна
+                                    діяльність, робота з батьками</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info__modal-info">
+                        <ul class="info__modal-list">
+                            <div class="info__modal-item" data-target="modal1"> <a href="#!"
+                                    class="schedule-link schedule1">Розклад дня</a></div>
+                            <div class="info__modal-item" data-target="modal2"> <a href="#!"
+                                    class="schedule-link meals">Харчування</a></div>
+                            <div class="info__modal-item" data-target="modal3"> <a href="#!"
+                                    class="schedule-link payment">Оплата</a></div>
+                        </ul>
+                    </div>
+                    <div class="info__modal-block">
+                        <div id="modal1" class="modal">
+                            <div class="modal__content">
+                                <div class="modal__wrapper">
+                                    <div class="modal__tabs">
+                                        <h3 class="active">Понеділок <span>Monday</span></h3>
+                                        <h3>Вівторок <span>Tuesday</span></h3>
+                                        <h3>Середа <span>Wednesday</span></h3>
+                                        <h3>Четвер <span>Thursday</span></h3>
+                                        <h3>П'ятниця <span>Friday</span></h3>
+                                    </div>
+                                    <div class="modal__tabs-content"> <span class="close">&times;</span>
+                                        <div class="active">
+                                            <h4>Розклад дня <span style="opacity: 0.7;">(Schedule)</span></h4>
+                                            <p class="scheduleMonday"><br></p>
+                                        </div>
+                                        <div>
+                                            <h4>Розклад дня <span style="opacity: 0.7;">(Schedule)</span></h4>
+                                            <p class="scheduleTuesday"><br></p>
+                                        </div>
+                                        <div>
+                                            <h4>Розклад дня <span style="opacity: 0.7;">(Schedule)</span></h4>
+                                            <p class="scheduleWednesday"><br></p>
+                                        </div>
+                                        <div>
+                                            <h4>Розклад дня <span style="opacity: 0.7;">(Schedule)</span></h4>
+                                            <p class="scheduleThursday"><br></p>
+                                        </div>
+                                        <div>
+                                            <h4>Розклад дня <span style="opacity: 0.7;">(Schedule)</span></h4>
+                                            <p class="scheduleFriday"><br></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="modal2" class="modal">
+                            <div class="modal__content">
+                                <div class="modal__wrapper">
+                                    <div class="modal__tabs">
+                                        <h3 class="active">Понеділок <span>Monday</span></h3>
+                                        <h3>Вівторок <span>Tuesday</span></h3>
+                                        <h3>Середа <span>Wednesday</span></h3>
+                                        <h3>Четвер <span>Thursday</span></h3>
+                                        <h3>П'ятниця <span>Friday</span></h3>
+                                    </div>
+                                    <div class="modal__tabs-content"> <span class="close">&times;</span>
+                                        <div class="active">
+                                            <h4>Харчування<span style="opacity: 0.7;">(Food)</span></h4>
+                                            <p class="foodMonday"><br></p>
+                                        </div>
+                                        <div>
+                                            <h4>Харчування<span style="opacity: 0.7;">(Food)</span></h4>
+                                            <p class="foodTuesday"><br></p>
+                                        </div>
+                                        <div>
+                                            <h4>Харчування<span style="opacity: 0.7;">(Food)</span></h4>
+                                            <p class="foodWednesday"><br></p>
+                                        </div>
+                                        <div>
+                                            <h4>Харчування<span style="opacity: 0.7;">(Food)</span></h4>
+                                            <p class="foodThursday"><br></p>
+                                        </div>
+                                        <div>
+                                            <h4>Харчування<span style="opacity: 0.7;">(Food)</span></h4>
+                                            <p class="foodFriday"><br></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="modal3" class="modal">
+                            <div class="modal__content2">
+                                <div class="modal__wrapper2">
+                                    <div class="modal__head">
+                                        <p class="modal__head-tittle">Оплата</p> <span class="close">&times;</span>
+                                    </div>
+                                    <div class="modal__tabs-content2">
+                                        <h4>Шановні батьки</h4>
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, nihil.
+                                            Accusantium dolorum quisquam officia nihil, eius velit placeat voluptate
+                                            sunt numquam deleniti, sit natus quas fugit. Consequuntur saepe aliquam
+                                            voluptas.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <a href="./docs/img/Режим роботи.docx"
+                    style="z-index: 999; display: flex; justify-content: center; padding-bottom: 20px; font-weight: 600; margin-top: -30px;"
+                    target="_blank">Переглянути режим роботи</a>
+            </div>
+        </section>
+    </body>
+    <!DOCTYPE html>
+    <section class="teachers" id="teacher">
+        <div></div>
+        <div class="container">
+            <div class="teachers__text">
+                <h1 class="teachersTitle">Наші вихователі</h1>
+            </div>
+            <div class="teachers__cards">
+                <div class="teachers__card card-teachers" data-name="modal-1">
+                    <div class="teachers__imagBx"> <img src="./docs/img/teachers/teacher1.jpg" alt="" draggable="false"
+                            class="card-img">
+                        <div class="plus"></div>
+                    </div>
+                    <div class="teachers__init">
+                        <div class="teachers__title">
+                            <p>Новосад Оксана Василівна</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="teachers__card card-teachers" data-name="modal-2"> <img
+                        src="./docs/img/teachers/teacher2.jpg" alt="" draggable="false" class="card-img"> <input
+                        type="checkbox">
+                    <div class="toggle">+</div>
+                    <div class="teachers__content">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum fugiat odio illo quam
+                            distinctio rem maiores inventore culpa necessitatibus consequatur! Accusamus id error nobis,
+                        </p>
+                        <div class="teachers__social"><i class="ri-instagram-line"></i><i
+                                class="ri-telegram-line"></i><i class="ri-phone-line"></i></div>
+                    </div>
+                    <div class="teachers__init">
+                        <div class="teachers__title">
+                            <p>Корніцька Ірина Володимирівна</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="teachers__card card-teachers" data-name="modal-3"> <img
+                        src="./docs/img/teachers/teacher3.jpg" alt="" draggable="false" class="card-img"> <input
+                        type="checkbox">
+                    <div class="toggle">+</div>
+                    <div class="teachers__content">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum fugiat odio illo quam
+                            distinctio rem maiores inventore culpa necessitatibus consequatur! Accusamus id error nobis,
+                        </p>
+                        <div class="teachers__social"><i class="ri-instagram-line"></i><i
+                                class="ri-telegram-line"></i><i class="ri-phone-line"></i></div>
+                    </div>
+                    <div class="teachers__init">
+                        <div class="teachers__title">
+                            <p>Савула Оксана Семенівна</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="teachers__card card-teachers" data-name="modal-4"> <img
+                        src="./docs/img/teachers/teacher4.jpg" alt="" draggable="false" class="card-img"> <input
+                        type="checkbox">
+                    <div class="toggle">+</div>
+                    <div class="teachers__content">
+                        <p>Вихователь «спеціаліст першої категорії»</p>
+                        <div class="teachers__social"></div>
+                    </div>
+                    <div class="teachers__init">
+                        <div class="teachers__title">
+                            <p>Токарчук Людмила Костянтинівна</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="teachers__card card-teachers" data-name="modal-6"> <input type="checkbox">
+                    <div class="toggle">+</div>
+                    <div class="teachers__content">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum fugiat odio illo quam
+                            distinctio rem maiores inventore culpa necessitatibus consequatur! Accusamus id error nobis,
+                        </p>
+                        <div class="teachers__social"><i class="ri-instagram-line"></i><i
+                                class="ri-telegram-line"></i><i class="ri-phone-line"></i></div>
+                    </div>
+                    <div class="teachers__init">
+                        <div class="teachers__title">
+                            <p>Anatoliy Marchenko</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="teachers__card card-teachers" data-name="modal-7">
+                    <div class="teachers__imagBx"> <img src="./docs/img/teachers/teacher5.jpg" alt="" draggable="false"
+                            class="card-img"></div> <input type="checkbox">
+                    <div class="toggle">+</div>
+                    <div class="teachers__content">
+                        <p>Вихователь «спеціаліст вищої категорії»</p>
+                        <div class="teachers__social"><i class="ri-instagram-line"></i><i
+                                class="ri-telegram-line"></i><i class="ri-phone-line"></i></div>
+                    </div>
+                    <div class="teachers__init">
+                        <div class="teachers__title">
+                            <p>Бащук Людмила Степанівна</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="teachers__card card-teachers" data-name="modal-8"> <img
+                        src="./docs/img/teachers/teacher6.jpg" alt="" draggable="false" class="card-img"> <input
+                        type="checkbox">
+                    <div class="toggle">+</div>
+                    <div class="teachers__content">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum fugiat odio illo quam
+                            distinctio rem maiores inventore culpa necessitatibus consequatur! Accusamus id error nobis,
+                        </p>
+                        <div class="teachers__social"></div>
+                    </div>
+                    <div class="teachers__init">
+                        <div class="teachers__title">
+                            <p>ПШИГАЛІНСЬКА НАТАЛІЯ ФЕДОРІВНА</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="teachers__card card-teachers" data-name="modal-9"> <img
+                        src="./docs/img/teachers/teacher7.jpg" alt="" draggable="false" class="card-img"> <input
+                        type="checkbox">
+                    <div class="toggle">+</div>
+                    <div class="teachers__content">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum fugiat odio illo quam
+                            distinctio rem maiores inventore culpa necessitatibus consequatur! Accusamus id error nobis,
+                        </p>
+                        <div class="teachers__social"></div>
+                    </div>
+                    <div class="teachers__init">
+                        <div class="teachers__title">
+                            <p>Стельмащук Оксана Анатоліїна</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="teachers__card card-teachers" data-name="modal-10"> <img
+                        src="./docs/img/teachers/teacher10.jpg" alt="" draggable="false" class="card-img"> <input
+                        type="checkbox">
+                    <div class="toggle">+</div>
+                    <div class="teachers__content">
+                        <p>Вчитель-логопед, «спеціаліст вищої категорії»</p>
+                        <div class="teachers__social"></div>
+                    </div>
+                    <div class="teachers__init">
+                        <div class="teachers__title">
+                            <p>Гуменюк Алла Миколаївна</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="teachers__card card-teachers" data-name="modal-11"> <img
+                        src="./docs/img/teachers/teacher11.jpg" alt="" draggable="false" class="card-img"> <input
+                        type="checkbox">
+                    <div class="toggle">+</div>
+                    <div class="teachers__content">
+                        <p>Вихователь «спеціаліст»</p>
+                        <div class="teachers__social"></div>
+                    </div>
+                    <div class="teachers__init">
+                        <div class="teachers__title">
+                            <p>Нейлі Оксана Романівна</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="teachers__card card-teachers" data-name="modal-12"> <img
+                        src="./docs/img/teachers/teacher12.jpg" alt="" draggable="false" class="card-img"> <input
+                        type="checkbox">
+                    <div class="toggle">+</div>
+                    <div class="teachers__content">
+                        <p>Вихователь «спеціаліст»</p>
+                        <div class="teachers__social"></div>
+                    </div>
+                    <div class="teachers__init">
+                        <div class="teachers__title">
+                            <p>Цюрняк Людмила Святославіна</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="teachers__preview">
+                <div class="preview" data-target="modal-1">
+                    <div class="preview__info"> <span class="close">&times;</span>
+                        <div class="preview__imagBx"> <img src="./docs/img/teachers/teacher1.jpg" alt=""
+                                draggable="false" class="card-img">
+                            <h3>Новосад Оксана Василівна</h3>
+                            <div class="preview__social"><a href="https://youtube.com/channel/UC8O8dt3Q4MQjUlRnzGh3XqA"
+                                    target="_blank"><i class="ri-youtube-line"
+                                        style="background-color: #d21919;"></i></a></div>
+                            <p>Вихователь «спеціаліст першої категорії»</p>
+                        </div>
+                        <div class="preview__txt">
+                            <div>Мої розробки<br> Гра. Малювання. Тема: “Готуємося до Великодня»</div>
+                            <div>Мета: Вчити дітей розуміти значення пасхальної атрибутики. Засобами різноманітних
+                                дидактичних ігор розвивати увагу та пам’ять. Виховувати любов та повагу до звичаїв
+                                рідного народу.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="preview" data-target="modal-2">
+                    <div class="preview__info"> <span class="close">&times;</span>
+                        <div class="preview__imagBx"> <img src="./docs/img/teachers/teacher2.jpg" alt=""
+                                draggable="false" class="card-img">
+                            <h3>Корніцька Ірина Володимирівна</h3>
+                            <div class="preview__social"></div>
+                            <p>Вихователь «спеціаліст другої категорії»</p>
+                        </div>
+                        <div class="preview__txt"></div>
+                    </div>
+                </div>
+                <div class="preview" data-target="modal-3">
+                    <div class="preview__info"> <span class="close">&times;</span>
+                        <div class="preview__imagBx"> <img src="./docs/img/teachers/teacher3.jpg" alt=""
+                                draggable="false" class="card-img">
+                            <h3>Савула Оксана Семенівна</h3>
+                            <div class="preview__social"> <a href="./docs/img/Savula.docx" target="_blank">Переглянути
+                                    портфоліо</a></div>
+                            <p>Вчитель-логопед «спеціаліст вищої категорії», педагогічне звання «старший учитель»</p>
+                        </div>
+                        <div class="preview__txt"></div>
+                    </div>
+                </div>
+                <div class="preview" data-target="modal-4">
+                    <div class="preview__info"> <span class="close">&times;</span>
+                        <div class="preview__imagBx"> <img src="./docs/img/teachers/teacher4.jpg" alt=""
+                                draggable="false" class="card-img">
+                            <h3>Токарчук Людмила Костянтинівна</h3>
+                            <div class="preview__social"></div>
+                            <p>Вихователь «спеціаліст першої категорії»</p>
+                        </div>
+                        <div class="preview__txt"></div>
+                    </div>
+                </div>
+                <div class="preview" data-target="modal-5">
+                    <div class="preview__info"> <span class="close">&times;</span>
+                        <div class="preview__imagBx">
+                            <div class="preview__social"></div>
+                        </div>
+                        <div class="preview__txt"></div>
+                    </div>
+                </div>
+                <div class="preview" data-target="modal-6">
+                    <div class="preview__info"> <span class="close">&times;</span>
+                        <div class="preview__imagBx"> <img src="./docs/img/teachers/teacher5.jpg" alt=""
+                                draggable="false" class="card-img">
+                            <h3>Бащук Людмила Степанівна</h3>
+                            <div class="preview__social"><i class="ri-instagram-line"></i><i
+                                    class="ri-telegram-line"></i><i class="ri-phone-line"></i></div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptatem, distinctio
+                                praesentium, totam officiis nostrum libero rem, sapiente eveniet voluptatum quia fugiat
+                                perspiciatis tempora magni. Minima sunt pariatur perspiciatis.</p>
+                        </div>
+                        <div class="preview__txt">
+                            <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure corrupti quaerat unde
+                                veritatis maxime? Nemo voluptate id illo architecto quas?Lorem ipsum dolor, sit amet
+                                consectetur adipisicing elit. Iure corrupti quaerat unde veritatis maxime? Nemo
+                                voluptate id illo architecto quas?Lorem ipsum dolor, sit amet consectetur</div>
+                            <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure corrupti quaerat unde
+                                veritatis maxime? Nemo voluptate id illo architecto quas?Lorem ipsum dolor, sit amet
+                                consectetur adipisicing elit. Iure corrupti quaerat unde veritatis maxime? Nemo
+                                voluptate id illo architecto quas?Lorem ipsum dolor, sit amet consectetur</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="preview" data-target="modal-7">
+                    <div class="preview__info"> <span class="close">&times;</span>
+                        <div class="preview__imagBx"> <img src="./docs/img/teachers/teacher5.jpg" alt=""
+                                draggable="false" class="card-img">
+                            <h3>Бащук Людмила Степанівна</h3>
+                            <div class="preview__social"></div>
+                            <p>Вихователь «спеціаліст вищої категорії»</p>
+                        </div>
+                        <div class="preview__txt"></div>
+                    </div>
+                </div>
+                <div class="preview" data-target="modal-8">
+                    <div class="preview__info"> <span class="close">&times;</span>
+                        <div class="preview__imagBx"> <img src="./docs/img/teachers/teacher6.jpg" alt=""
+                                draggable="false" class="card-img">
+                            <h3>Пшигалінська Наталія Федорівна</h3>
+                            <div class="preview__social"></div>
+                            <p>Вчитель-логопед «спеціаліст першої категорії»</p>
+                        </div>
+                        <div class="preview__txt"></div>
+                    </div>
+                </div>
+                <div class="preview" data-target="modal-9">
+                    <div class="preview__info"> <span class="close">&times;</span>
+                        <div class="preview__imagBx"> <img src="./docs/img/teachers/teacher7.jpg" alt=""
+                                draggable="false" class="card-img">
+                            <h3>Стельмащук Оксана Анатоліїна</h3>
+                            <div class="preview__social"> <a
+                                    href="./docs/img/Стельмащук_О_А_вихователь_групи_Сонечко.doc"
+                                    target="_blank">Переглянути портфоліо</a></div>
+                            <p>Вихователь «спеціаліст»</p>
+                        </div>
+                        <div class="preview__txt">
+                            <div> Мета: ознайомлювати з навколишнім світом. Навчати розрізняти і називати краєвиди
+                                території України. Удосконалювати вміння слухати звуки навколишнього середовища (співу
+                                птахів, хлюпотіння води). Удосконалювати вміння відповідати на запитання двома-трьома
+                                словами. Узагальнити знання про свійських та диких тварин, де вони живуть. Навчати
+                                відтворювати сюжет казки, характерезувати внутрiшнiй стан, настрій персонажу,
+                                закріплювати чітку вимову. Розвивати дрібну моторику, увагу, спостережливість під час
+                                конструювання та аплікації. Виховувати інтерес до пізнання нового, незвичного.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="preview" data-target="modal-10">
+                    <div class="preview__info"> <span class="close">&times;</span>
+                        <div class="preview__imagBx"> <img src="./docs/img/teachers/teacher10.jpg" alt=""
+                                draggable="false" class="card-img">
+                            <h3>Гуменюк Алла Миколаївна</h3>
+                            <div class="preview__social"> <a
+                                    href="https://www.youtube.com/watch?app=desktop&v=uHSQcDAsnCA&ab_channel=%D0%A0%D1%96%D0%B4%D0%BD%D0%B8%D0%B9%D0%92%D1%83%D0%BB%D0%B8%D0%BA%D0%97%D0%94%D0%9E%E2%84%9628%D0%BC.%D0%9B%D1%83%D1%86%D1%8C%D0%BA"
+                                    target="_blank">Переглянути консультацію для батьків</a></div>
+                            <p>Вчитель-логопед, «спеціаліст вищої категорії»</p>
+                        </div>
+                        <div class="preview__txt"></div>
+                    </div>
+                </div>
+                <div class="preview" data-target="modal-11">
+                    <div class="preview__info"> <span class="close">&times;</span>
+                        <div class="preview__imagBx"> <img src="./docs/img/teachers/teacher11.jpg" alt=""
+                                draggable="false" class="card-img">
+                            <h3>Нейлі Оксана Романівна</h3>
+                            <div class="preview__social"> <a href="./docs/img/Нейлі О.Р..docx"
+                                    target="_blank">Переглянути портфоліо</a></div>
+                            <p>Вихователь «спеціаліст»</p>
+                        </div>
+                        <div class="preview__txt"></div>
+                    </div>
+                </div>
+                <div class="preview" data-target="modal-12">
+                    <div class="preview__info"> <span class="close">&times;</span>
+                        <div class="preview__imagBx"> <img src="./docs/img/teachers/teacher12.jpg" alt=""
+                                draggable="false" class="card-img">
+                            <h3>Цюрняк Людмила Святославіна</h3>
+                            <div class="preview__social"> <a href="./docs/img/Цюрняк_Людмила_Святославіна_портф.docx"
+                                    target="_blank">Переглянути портфоліо</a></div>
+                            <p>Вихователь «спеціаліст вищої категорії»</p>
+                        </div>
+                        <div class="preview__txt"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="teachers__load-more" class="teachersMore">Більше</div>
+        </div>
+    </section>
+    <!DOCTYPE html>
+    <section class="counter">
+        <div class="counter__wrapper">
+            <div class="counter-block">
+                <h1 class="count" data-target="10">0</h1>
+                <p class="counter1">Вихователів</p>
+            </div>
+            <div class="counter-block">
+                <h1 class="count" data-target="120">0</h1>
+                <p class="counter2">Кількість дітей</p>
+            </div>
+            <div class="counter-block">
+                <h1 class="count" data-target="20">0</h1>
+                <p class="counter3">Завідувачів</p>
+            </div>
+        </div>
+    </section>
+    <!DOCTYPE html>
+    <section class="programs" id="program">
+        <div class="programs__imagesBg"> <img src="./docs/img/1.png" data-speed="3" class="layer" alt=""> <img
+                src="./docs/img/2.png" data-speed="2" class="layer" alt=""> <img src="./docs/img/3.png" data-speed="-2"
+                class="layer" alt=""> <img src="./docs/img/4.png" data-speed="2" class="layer" alt=""> <img
+                src="./docs/img/5.png" data-speed="2" class="layer" alt=""> <img src="./docs/img/6.png" data-speed="-4"
+                class="layer" alt="" style="margin-top: -200px;"> <img src="./docs/img/7.png" data-speed="2"
+                class="layer" alt=""> <img src="./docs/img/12.png" data-speed="2" class="layer" alt=""
+                style="margin-top: 100px;"> <img src="./docs/img/9.png" data-speed="-1" class="layer" alt=""> <img
+                src="./docs/img/10.png" data-speed="3" class="layer" alt=""> <img src="./docs/img/11.png" data-speed="6"
+                class="layer" alt=""></div>
+        <div class="container">
+            <div class="programs__text">
+                <h1 class="programsTitle">Наша програма</h1>
+                <h5 class="programDescrip">Ми віддані турботі та освіті</h5>
+            </div>
+            <div class="programs__wrapper"><i id="left" class="ri-arrow-left-line"></i>
+                <div class="programs__carousel">
+                    <div class="programs__card" style="--cir: #009688">
+                        <div class="imgBx"> <img
+                                src="https://images.unian.net/photos/2021_07/thumb_files/400_0_1625489702-2646.jpg?r=456483"
+                                alt="" draggable="false"></div>
+                        <div class="programs__content">
+                            <h2>Lorem, ipsum.</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias enim explicabo nobis
+                                molestiae quo excepturi ex voluptatum asperiores dolorem dolores!</p>
+                        </div>
+                    </div>
+                    <div class="programs__card" style="--cir: #ff3e7f">
+                        <div class="imgBx"> <img
+                                src="https://www.canr.msu.edu/contentAsset/image/613ecf12-91f1-4292-8ec2-d1feb5547a9d/fileAsset/filter/Resize,Crop,Jpeg/resize_w/600/crop_w/600/crop_h/400/crop_x/0/crop_y/0/jpeg_q/70"
+                                alt="" draggable="false"></div>
+                        <div class="programs__content">
+                            <h2>Lorem, ipsum.</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias enim explicabo nobis
+                                molestiae quo excepturi ex voluptatum asperiores dolorem dolores!</p>
+                        </div>
+                    </div>
+                    <div class="programs__card" style="--cir: #03a9f4">
+                        <div class="imgBx"> <img
+                                src="https://cdn.britannica.com/51/141451-050-E76A9D3B/Kindergarten-classroom.jpg"
+                                alt="" draggable="false"></div>
+                        <div class="programs__content">
+                            <h2>Lorem, ipsum.</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias enim explicabo nobis
+                                molestiae quo excepturi ex voluptatum asperiores dolorem dolores!</p>
+                        </div>
+                    </div>
+                    <div class="programs__card" style="--cir: #03a9f4">
+                        <div class="imgBx"> <img
+                                src="https://www.usnews.com/dims4/USNEWS/0b33e1f/2147483647/thumbnail/970x647/quality/85/?url=https%3A%2F%2Fwww.usnews.com%2Fcmsmedia%2F12%2F35%2F5d2a6346487093c8ceff66e7666a%2Fgettyimages-1367212888.jpg"
+                                alt="" draggable="false"></div>
+                        <div class="programs__content">
+                            <h2>Lorem, ipsum.</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias enim explicabo nobis
+                                molestiae quo excepturi ex voluptatum asperiores dolorem dolores!</p>
+                        </div>
+                    </div>
+                    <div class="programs__card" style="--cir: #03a9f4">
+                        <div class="imgBx"> <img
+                                src="https://www.vmcdn.ca/f/files/sasktoday/images/stock-images/preschooler-painting-and-coloring.jpg"
+                                alt="" draggable="false"></div>
+                        <div class="programs__content">
+                            <h2>Lorem, ipsum.</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias enim explicabo nobis
+                                molestiae quo excepturi ex voluptatum asperiores dolorem dolores!</p>
+                        </div>
+                    </div>
+                    <div class="programs__card" style="--cir: #03a9f4">
+                        <div class="imgBx"> <img
+                                src="https://dht7q8fif4gks.cloudfront.net/2023-08/generic_school_discover_airdrie.jpg"
+                                alt="" draggable="false"></div>
+                        <div class="programs__content">
+                            <h2>Lorem, ipsum.</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias enim explicabo nobis
+                                molestiae quo excepturi ex voluptatum asperiores dolorem dolores!</p>
+                        </div>
+                    </div>
+                </div><i id="right" class="ri-arrow-right-line"></i>
+            </div>
+        </div>
+    </section>
+    <!DOCTYPE html>
+    <section class="gallery" id="gallery"> <input type="radio" name="Photos" id="check1"> <input type="radio"
+            name="Photos" id="check2"> <input type="radio" name="Photos" id="check3"> <input type="radio" name="Photos"
+            id="check4"> <input type="radio" name="Photos" id="check5"> <input type="radio" name="Photos" id="check6">
+        <input type="radio" name="Photos" id="check7"> <input type="radio" name="Photos" id="check8">
+        <div class="container2">
+            <h1 class="galleryTitle">Наша галерея</h1>
+            <div class="top-content"> <label for="check1" class="active">Всі</label> <label for="check3">Ромашка</label>
+                <label for="check4">Фіалка</label> <label for="check5">Волошка</label> <label
+                    for="check6">Сонечко</label> <label for="check7">Барвінок</label> <label for="check8">---</label>
+            </div>
+            <div class="gallery__photos"> <a href="./docs/img/gallery/gallary-photo1.jpg" class="pic add"><img
+                        data-src="./docs/img/gallery/gallary-photo1.jpg" alt=""></a> <a
+                    href="./docs/img/gallery/gallary-photo2.jpg" class="pic add"><img
+                        data-src="./docs/img/gallery/gallary-photo2.jpg" alt=""></a> <a
+                    href="./docs/img/gallery/gallary-photo3.jpg" class="pic add"><img
+                        data-src="./docs/img/gallery/gallary-photo3.jpg" alt=""></a> <a
+                    href="./docs/img/gallery/gallary-photo4.jpg" class="pic add"><img
+                        data-src="./docs/img/gallery/gallary-photo4.jpg" alt=""></a> <a
+                    href="./docs/img/gallery/gallary-photo5.jpg" class="pic add"><img
+                        data-src="./docs/img/gallery/gallary-photo5.jpg" alt=""></a> <a
+                    href="./docs/img/gallery/gallary-photo6.jpg" class="pic add"><img
+                        data-src="./docs/img/gallery/gallary-photo6.jpg" alt=""></a> <a
+                    href="./docs/img/gallery/gallary-photo7.jpg" class="pic add"><img
+                        data-src="./docs/img/gallery/gallary-photo7.jpg" alt=""></a> <a
+                    href="./docs/img/gallery/gallary-photo8.jpg" class="pic add"><img
+                        data-src="./docs/img/gallery/gallary-photo8.jpg" alt=""></a> <a
+                    href="./docs/img/gallery/gallary-photo9.jpg" class="pic add"><img
+                        data-src="./docs/img/gallery/gallary-photo9.jpg" alt=""></a> <a
+                    href="./docs/img/gallery/gallary-photo10.jpg" class="pic add"><img
+                        data-src="./docs/img/gallery/gallary-photo10.jpg" alt=""></a> <a
+                    href="./docs/img/gallery/gallary-photo11.jpg" class="pic add"><img
+                        data-src="./docs/img/gallery/gallary-photo11.jpg" alt=""></a> <a
+                    href="./docs/img/gallery/romashka1.jpg" class="pic romashka"><img
+                        data-src="./docs/img/gallery/romashka1.jpg" alt=""></a> <a
+                    href="./docs/img/gallery/romashka2.jpg" class="pic romashka"><img
+                        data-src="./docs/img/gallery/romashka2.jpg" alt=""></a> <a
+                    href="./docs/img/gallery/romashka3.jpg" class="pic romashka"><img
+                        data-src="./docs/img/gallery/romashka3.jpg" alt=""></a> <a
+                    href="./docs/img/gallery/romashka4.jpg" class="pic romashka"><img
+                        data-src="./docs/img/gallery/romashka4.jpg" alt=""></a> <a href="./docs/img/gallery/fialka1.jpg"
+                    class="pic fialka"><img data-src="./docs/img/gallery/fialka1.jpg" alt=""></a> <a
+                    href="./docs/img/gallery/fialka2.jpg" class="pic fialka"><img
+                        data-src="./docs/img/gallery/fialka2.jpg" alt=""></a> <a href="./docs/img/gallery/fialka3.jpg"
+                    class="pic fialka"><img data-src="./docs/img/gallery/fialka3.jpg" alt=""></a> <a
+                    href="./docs/img/gallery/fialka4.jpg" class="pic fialka"><img
+                        data-src="./docs/img/gallery/fialka4.jpg" alt=""></a> <a href="./docs/img/gallery/fialka5.jpg"
+                    class="pic fialka"><img data-src="./docs/img/gallery/fialka5.jpg" alt=""></a> <a
+                    href="./docs/img/gallery/fialka6.jpg" class="pic fialka"><img
+                        data-src="./docs/img/gallery/fialka6.jpg" alt=""></a> <a href="./docs/img/gallery/voloshka1.jpg"
+                    class="pic voloshka"><img data-src="./docs/img/gallery/voloshka1.jpg" alt=""></a> <a
+                    href="./docs/img/gallery/voloshka2.jpg" class="pic voloshka"><img
+                        data-src="./docs/img/gallery/voloshka2.jpg" alt=""></a> <a
+                    href="./docs/img/gallery/voloshka3.jpg" class="pic voloshka"><img
+                        data-src="./docs/img/gallery/voloshka3.jpg" alt=""></a> <a
+                    href="./docs/img/gallery/voloshka4.jpg" class="pic voloshka"><img
+                        data-src="./docs/img/gallery/voloshka4.jpg" alt=""></a> <a
+                    href="./docs/img/gallery/voloshka5.jpg" class="pic voloshka"><img
+                        data-src="./docs/img/gallery/voloshka5.jpg" alt=""></a> <a
+                    href="./docs/img/gallery/sonechko1.jpg" class="pic sonechko"><img
+                        data-src="./docs/img/gallery/sonechko1.jpg" alt=""></a> <a
+                    href="./docs/img/gallery/sonechko2.jpg" class="pic sonechko"><img
+                        data-src="./docs/img/gallery/sonechko2.jpg" alt=""></a> <a
+                    href="./docs/img/gallery/sonechko3.jpg" class="pic sonechko"><img
+                        data-src="./docs/img/gallery/sonechko3.jpg" alt=""></a> <a
+                    href="./docs/img/gallery/sonechko4.jpg" class="pic sonechko"><img
+                        data-src="./docs/img/gallery/sonechko4.jpg" alt=""></a> <a
+                    href="./docs/img/gallery/sonechko5.jpg" class="pic sonechko"><img
+                        data-src="./docs/img/gallery/sonechko5.jpg" alt=""></a> <a
+                    href="./docs/img/gallery/barvinok1.jpg" class="pic barvinok"><img
+                        data-src="./docs/img/gallery/barvinok1.jpg" alt=""></a> <a
+                    href="./docs/img/gallery/barvinok2.jpg" class="pic barvinok"><img
+                        data-src="./docs/img/gallery/barvinok2.jpg" alt=""></a> <a
+                    href="./docs/img/gallery/barvinok3.jpg" class="pic barvinok"><img
+                        data-src="./docs/img/gallery/barvinok3.jpg" alt=""></a> <a
+                    href="./docs/img/gallery/barvinok4.jpg" class="pic barvinok"><img
+                        data-src="./docs/img/gallery/barvinok4.jpg" alt=""></a> <a
+                    href="./docs/img/gallery/barvinok5.jpg" class="pic barvinok"><img
+                        data-src="./docs/img/gallery/barvinok5.jpg" alt=""></a> <a
+                    href="./docs/img/gallery/barvinok6.jpg" class="pic barvinok"><img
+                        data-src="./docs/img/gallery/barvinok6.jpg" alt=""></a></div>
+        </div>
+    </section>
+    <!DOCTYPE html>
+    <section class="footer" id="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__links"> <a href="#!" class="footer__logo contactsLogo">Дитячий садок №28</a><span
+                        class="footer__wasp"></span>
+                    <div class="footer__social"><a href="#!" class="footer__inst"><i
+                                class="ri-instagram-line"></i></a><a
+                            href="https://www.facebook.com/profile.php?id=100035120799894" target="_blank"
+                            class="footer__facebook"><i class="ri-facebook-line"></i></a><a
+                            href="https://www.youtube.com/channel/UC8O8dt3Q4MQjUlRnzGh3XqA" target="_blank"
+                            class="footer__youtube"><i class="ri-youtube-fill"></i></a></div>
+                </div>
+                <div class="footer__contacts">
+                    <h4 class="contactsOur">Наші контакти</h4>
+                    <div class="contacts">
+                        <div class="contact-item">
+                            <p>+38 033 226 46 93</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__graph">
+                    <h4 class="contactsSchedule">Графік роботи</h4>
+                    <div class="graphs">
+                        <p><span>Пн-Пт: (Mon-Fri)</span> 7:40–19:30</p>
+                        <p><span>Сб: (Sat)</span> Вихідний (Weekend)</p>
+                        <p><span>Нд (Sun) —</span> Вихідний (Weekend)</p>
+                    </div>
+                </div>
+                <div class="footer__adress">
+                    <h4 class="contactsAdress">Місце розташування закладу</h4>
+                    <div class="address1">
+                        <p class="address">Волинська область, місто Луцьк, вул. Володимира Івасюка</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><iframe class="footer__map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31149.88862090032!2d25.297637217106615!3d50.742652972262036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47259998b02296dd%3A0xcea194cb635692c8!2z0JTQuNGC0Y_Rh9C40Lkg0YHQsNC00L7QuiDihJYyOCAi0JLRg9C70LjQuiI!5e0!3m2!1suk!2sua!4v1713211018711!5m2!1suk!2sua"
+        width="350" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="./js/translations.bundle.js"></script>
+    <script src="./docs/js/index.bundle.js" async></script>
+</body>
+
+</html>

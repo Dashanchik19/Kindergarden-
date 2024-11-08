@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дитячий садочок "Вулик" ЗДО №28 Луцького району Волинської області</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css"
+        integrity="sha512-kwJUhJJaTDzGp6VTPBbMQWBFUof6+pv0SM3s8fo+E6XnPmVmtfwENK0vHYup3tsYnqHgRDoBDTJWoq7rnQw2+g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../docs/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="icon" type="image/png" href="./img/logo-head.webp">
+</head>
+
+<body>
+    <!DOCTYPE html>
+
+    <body>
+        <nav class="nav">
+            <div class="container">
+                <div class="nav__wrapper"> <a href="../index.html" class="nav__logo navLink">Дитячий садок
+                        "Вулик"</a><span class="nav__wasp"></span>
+                    <div class="menu">
+                        <div class="menu__head">
+                            <div class="nav__logo">Вулик</div> <button type="button" class="menu-close-btn"></button>
+                        </div>
+                        <ul>
+                            <li><a href="#about" class="aboutMenu">Про нас</a></li>
+                            <li><a href="#offer" class="offersMenu">Пропозиції</a></li>
+                            <li><a href="#info" class="scheduleMenu">Режим дня</a></li>
+                            <li><a href="#teacher" class="teachersMenu">Вихователі</a></li>
+                            <li><a href="#program" class="programsMenu">Програма</a></li>
+                            <li class="dropdown"> <a href="#" class="parentsMenu">Батькам</a><i
+                                    class="ri-arrow-down-s-line"></i>
+                                <ul class="sub-menu">
+                                    <li class="dropdown"> <a href="parents.html" class="navLink forParents"
+                                            data-type="parents" data-load="true"><span>Для Вас, Батьки</span></a><i
+                                            class="ri-arrow-down-s-line"></i>
+                                        <ul class="sub-menu sub-menu-right">
+                                            <li><a href="parents.html" class="rulesAdmission"><span>Правила зарахування
+                                                        до закладу</span></a></li>
+                                            <li><a href="parents.html" class="pointConsultation"><span>Консультативний
+                                                        пункт</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown"> <a href="public.html" class="navLink pulicInfo"
+                                            data-type="public" data-load="true"><span>Публічна інформація</span></a><i
+                                            class="ri-arrow-down-s-line"></i>
+                                        <ul class="sub-menu sub-menu-right">
+                                            <li><a href="public.html" class="charter"><span>Статут</span></a></li>
+                                            <li><a href="public.html" class="budget"><span>Кошторис</span></a></li>
+                                            <li><a href="public.html" class="programsEducation"><span>Освітні
+                                                        програми</span></a></li>
+                                            <li><a href="public.html" class="languageEducation"><span>Мова освітнього
+                                                        процесу</span></a></li>
+                                            <li><a href="public.html" class="annualReport"><span>Річний звіт</span></a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#gallery" class="galleryMenu">Галерея</a></li>
+                            <li class="dropdown"> <a href="#" class="baseMenu">Довідкова база</a><i
+                                    class="ri-arrow-down-s-line"></i>
+                                <ul class="sub-menu">
+                                    <li class="dropdown"> <a href="groups.html" class="networkGroups"><span>Мережа
+                                                груп</span></a></li>
+                                    <li class="dropdown"> <a href="legislation.html"
+                                            class="navLink legislativeFramework" data-type="legislation"
+                                            data-load="true"><span>Нормативно-правова база</span></a><i
+                                            class="ri-arrow-down-s-line"></i>
+                                        <ul class="sub-menu sub-menu-left">
+                                            <li><a href="legislation.html" class="lawsUkraine"><span>Закони
+                                                        України</span></a></li>
+                                            <li><a href="legislation.html" class="cabinetMinisters"><span>Постанови
+                                                        КМУ</span></a></li>
+                                            <li><a href="legislation.html" class="scienceMeetings"><span>Наради
+                                                        МОН</span></a></li>
+                                            <li><a href="legislation.html" class="scienceLetters"><span>Листи
+                                                        МОН</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown"> <a href="advice.html"
+                                            class="navLink expertAdvice"><span>Поради фахівців</span></a><i
+                                            class="ri-arrow-down-s-line"></i>
+                                        <ul class="sub-menu sub-menu-left">
+                                            <li><a href="advice.html" class="psychologist"><span>Практичний
+                                                        психолог</span></a></li>
+                                            <li><a href="advice.html" class="peInstructor"><span>Інструктор з фізичного
+                                                        виховання</span></a></li>
+                                            <li><a href="advice.html" class="musicInstructor"><span>Керівник
+                                                        музичний</span></a></li>
+                                            <li><a href="advice.html" class="nurseMedical"><span>Сестра
+                                                        медична</span></a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#footer" class="contactsMenu">Контакти</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-right container"> <button type="button" class="nav-open-menu">
+                            <div class="line line-1"></div>
+                            <div class="line line-2"></div>
+                            <div class="line line-3"></div>
+                        </button></div>
+                </div>
+            </div>
+        </nav>
+    </body>
+    <div class="page-content">
+        <div class="container">
+            <nav id="breadcrumb-container">
+                <ol class="breadcrumbnav">
+                    <li><a href="../index.html">Головна</a></li>
+                    <li><a href="#">Батькам</a></li>
+                    <li>Для Вас, батьки</li>
+                </ol>
+            </nav>
+        </div>
+        <section class="parents">
+            <section class="social">
+                <div class="social__map"><a href="#!" class="social__map1"><i class="ri-map-pin-line"></i>
+                        <div class="social__hideBlock" id="map"></div>
+                    </a></div><a href="#!" class="social__inst"><i class="ri-instagram-line"></i></a><a
+                    href="https://www.facebook.com/profile.php?id=100035120799894" target="_blank"
+                    class="social__facebook"><i class="ri-facebook-line"></i></a><a
+                    href="https://www.youtube.com/channel/UC8O8dt3Q4MQjUlRnzGh3XqA" target="_blank"
+                    class="social__youtube"><i class="ri-youtube-fill"></i></a>
+            </section>
+            <main class="headerParents">
+                <div class="container">
+                    <div class="headerParents__wrapper"> <span class="headerParents__title">Комунальний заклад "Луцький
+                            заклад дошкільної освіти №28"</span>
+                        <div class="headerParents__arrow"><i class="ri-arrow-down-s-line"></i></div>
+                        <div class="headerParents__desc active">
+                            <h1>Першочергово до державних (комунальних) закладів дошкільної освіти зараховуються діти,
+                                які:</h1>
+                            <p>1) проживають на території обслуговування державного (комунального) закладу дошкільної
+                                освіти (в разі її встановлення його засновником (засновниками);</p>
+                            <p>2) є рідними (усиновленими) братами та/або сестрами дітей, які вже здобувають дошкільну
+                                освіту в такому закладі дошкільної освіти;</p>
+                            <p>3) є дітьми працівників такого закладу дошкільної освіти;</p>
+                            <p>4) належать до категорії дітей-сиріт, дітей, позбавлених батьківського піклування, які
+                                влаштовані під опіку, у прийомну сім’ю, дитячий будинок сімейного типу, патронатну
+                                сім’ю, а також усиновлених дітей;</p>
+                            <p>5) перебувають у складних життєвих обставинах та на обліку в службах у справах дітей;</p>
+                            <p>6) діти з числа внутрішньо переміщених осіб чи діти, які мають статус дитини, яка
+                                постраждала внаслідок воєнних дій і збройних конфліктів;</p>
+                            <p>7) мають право на першочергове зарахування до закладів освіти відповідно до закону.</p>
+                            <h1> Зарахування дітей до державного (комунального) закладу дошкільної освіти здійснюється
+                                керівником такого закладу протягом календарного року на вільні місця у порядку
+                                черговості надходження заяв про зарахування. Заява про зарахування подається особисто
+                                одним із батьків або іншим законним представником дитини.</h1>
+                            <h2>Зарахування дитини здійснюється згідно з відповідним наказом керівника закладу
+                                дошкільної освіти.</h2>
+                        </div>
+                    </div>
+            </main>
+            <section class="admissions">
+                <div class="container">
+                    <div class="admissions__blocks">
+                        <div class="admissions__wrapper">
+                            <h1 class="admissions__title">Правила прийому дітей</h1>
+                            <div class="collapsible__block">
+                                <div class="collapsible"> <input type="checkbox" id="collapsible-head"> <label
+                                        for="collapsible-head" class="collapsible-head">До заяви про зарахування дитини
+                                        до закладу дошкільнох освіти додаються:</label>
+                                    <div class="collapsible-text">
+                                        <p><br> - копія свідоцтва про народження дитини;<br> - медична довідка, видана
+                                            відповідно до статті 15 Закону України «Про захист населення від інфекційних
+                                            хвороб», разом з висновком про те, що дитина може відвідувати заклад
+                                            дошкільної освіти;<br> - для зарахування дитини до державного (комунального)
+                                            спеціального закладу дошкільної освіти (спеціальних груп) до заяви про
+                                            зарахування додається висновок інклюзивно-ресурсного центру про комплексну
+                                            психолого-педагогічну оцінку розвитку дитини щодо виявлених особливостей
+                                            розвитку (порушень слуху, зору, мовлення, поведінки, опорно-рухового
+                                            апарату, інтелектуального розвитку чи затримки психічного розвитку).</p>
+                                    </div>
+                                </div>
+                                <div class="collapsible"> <input type="checkbox" id="collapsible-head2"> <label
+                                        for="collapsible-head2" class="collapsible-head">Для зарахування дитини з
+                                        інвалідністю до державного (комунального) закладу дошкільної освіти до заяви про
+                                        зарахування додаються:</label>
+                                    <div class="collapsible-text">
+                                        <p> - копія медичного висновку про дитину з інвалідністю віком до 18 років,
+                                            виданого лікарсько-консультативною комісією закладу охорони здоров’я, або
+                                            копія посвідчення особи, яка одержує державну соціальну допомогу відповідно
+                                            до Закону України «Про державну соціальну допомогу особам з інвалідністю з
+                                            дитинства та дітям з інвалідністю»;<br> - копія індивідуальної програми
+                                            реабілітації дитини з інвалідністю.</p>
+                                    </div>
+                                </div>
+                            </div> <a href="./img/Зарахування.docx" style="z-index: 999;" target="_blank">Переглянути
+                                інформацію щодо зарахування</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="consultation">
+                <div class="container">
+                    <h1>Графік роботи<br> консультативного пункту КЗ «Луцький заклад дошкільної освіти № 28
+                        компенсуючого типу (спеціальний)<br> Луцької міської ради»</h1> <span>Консультативний пункт
+                        працює з понеділка по п’ятницю</span>
+                    <div class="consultation__blocks">
+                        <div class="consultation__block">
+                            <div class="consultation__name">Директор</div>
+                            <div class="consultation__time">12.00 – 13.00</div>
+                        </div>
+                        <div class="consultation__block">
+                            <div class="consultation__name">Вихователь-методист</div>
+                            <div class="consultation__time">12.00 – 13.00</div>
+                        </div>
+                        <div class="consultation__block">
+                            <div class="consultation__name">Вчитель-дефектолог</div>
+                            <div class="consultation__time">11.00 – 12.00</div>
+                        </div>
+                        <div class="consultation__block">
+                            <div class="consultation__name">Вчитель-логопед</div>
+                            <div class="consultation__time">11.00 – 12.00</div>
+                        </div>
+                        <div class="consultation__block">
+                            <div class="consultation__name">Практичний психолог</div>
+                            <div class="consultation__combo">
+                                <div class="consultation__time">11.00 – 12.00 <span
+                                        style="color: #d0d0d0; font-size: 13px;">(понеділок, середа, п’ятниця)</span>
+                                </div>
+                                <div class="consultation__time">16.00 – 17.00 <span
+                                        style="color: #d0d0d0; font-size: 13px;">(четвер)</span></div>
+                            </div>
+                        </div>
+                        <div class="consultation__block">
+                            <div class="consultation__name">Інструктор з фізичного виховання</div>
+                            <div class="consultation__time">11.00 – 12.00</div>
+                        </div>
+                        <div class="consultation__block">
+                            <div class="consultation__name">Вихователь</div>
+                            <div class="consultation__time">13.00 – 14.00</div>
+                        </div>
+                        <div class="consultation__block">
+                            <div class="consultation__name">Сестра медична старша</div>
+                            <div class="consultation__time">14.00 – 15.00</div>
+                        </div>
+                    </div>
+                </div> <a href="./img/Графік консультпункт.docx" style="z-index: 999;" class="consultation__btn"
+                    target="_blank">Графік роботи консультативного пункту</a>
+            </section>
+            <section class="advisory">
+                <div class="container">
+                    <div class="advisory__wrapper">
+                        <h1 class="advisory__title">Поради щодо виховання</h1>
+                        <div class="advisory__blocks">
+                            <div class="advisory__block advisory__block--alternate"> <button> <a
+                                        href="https://dytpsyholog.com/2015/04/24/%d1%8f%d0%ba-%d0%b7%d0%b0%d0%be%d1%85%d0%be%d1%82%d0%b8%d1%82%d0%b8-%d1%82%d0%b0%d1%82%d0%b0-%d0%b4%d0%be-%d1%96%d0%b3%d0%be%d1%80-%d0%b7-%d0%b4%d0%b8%d1%82%d0%b8%d0%bd%d0%be%d1%8e/?fbclid=IwAR2G-y7oo1RQPssrkQ6n8yYhlb8TqXSXxI8Uo3cCmKyDRJlbpDRkfvf8IbM"
+                                        target="_blank">Як заохотити тата до ігор з дитиною</a></button></div>
+                            <div class="advisory__block"> <button> <a
+                                        href="https://7a0c0653-dc36-4429-a10b-f1e9659d743e.filesusr.com/ugd/0a4a23_b8c0c471f6de421a8b12496307419344.pdf"
+                                        target="_blank">Організація дня народження дитини в садку</a></button></div>
+                            <div class="advisory__block advisory__block--alternate"> <button> <a
+                                        href="https://7a0c0653-dc36-4429-a10b-f1e9659d743e.filesusr.com/ugd/0a4a23_fa735d3b82c0490b87bad99c750704c2.pdf"
+                                        target="_blank">Режим харчування дитини дома</a></button></div>
+                            <div class="advisory__block"> <button> <a
+                                        href="https://7a0c0653-dc36-4429-a10b-f1e9659d743e.filesusr.com/ugd/0a4a23_58271c6f2c51426d922bd461da1870b5.pdf"
+                                        target="_blank">Як запобігти харчовим отруєнням</a></button></div>
+                            <div class="advisory__block advisory__block--alternate"> <button> <a
+                                        href="https://7a0c0653-dc36-4429-a10b-f1e9659d743e.filesusr.com/ugd/0a4a23_000754710026476dba63a443d2fd2dd9.pdf"
+                                        target="_blank">Правила дорожнього руху</a></button></div>
+                            <div class="advisory__block"> <button> <a
+                                        href="https://7a0c0653-dc36-4429-a10b-f1e9659d743e.filesusr.com/ugd/0a4a23_bda57e4182974e08adb08cea7b3f3350.pdf"
+                                        target="_blank">Дитяче творче конструювання</a></button></div>
+                            <div class="advisory__block advisory__block--alternate"> <button> <a
+                                        href="https://7a0c0653-dc36-4429-a10b-f1e9659d743e.filesusr.com/ugd/0a4a23_55b44daa0ace497c9723fc59361e390a.pdf"
+                                        target="_blank">Чим зайняти дитину в дорозі</a></button></div>
+                            <div class="advisory__block"> <button> <a
+                                        href="https://7a0c0653-dc36-4429-a10b-f1e9659d743e.filesusr.com/ugd/0a4a23_5ecd7cebcd55416885aee301aa8248e2.pdf"
+                                        target="_blank">Чого не можна давати дітям у садочок</a></button></div>
+                            <div class="advisory__block advisory__block--alternate"> <button> <a
+                                        href="https://7a0c0653-dc36-4429-a10b-f1e9659d743e.filesusr.com/ugd/0a4a23_2aa3366c6b9140ae800018a03ce8cd97.pdf"
+                                        target="_blank">Способи роказати дитині свою любов</a></button></div>
+                            <div class="advisory__block"> <button> <a
+                                        href="https://7a0c0653-dc36-4429-a10b-f1e9659d743e.filesusr.com/ugd/0a4a23_0149ec67b1474193be1b2aaf213c7ce4.pdf"
+                                        target="_blank">Порадник батькам щодо виховання дитини</a></button></div>
+                            <div class="advisory__block advisory__block--alternate"> <button> <a
+                                        href="https://7a0c0653-dc36-4429-a10b-f1e9659d743e.filesusr.com/ugd/ca4cc1_4db051d38ee3494bb9f36bb2d119b797.pdf"
+                                        target="_blank">Вітаміни приймай та міру знай</a></button></div>
+                            <div class="advisory__block"> <button> <a
+                                        href="https://7a0c0653-dc36-4429-a10b-f1e9659d743e.filesusr.com/ugd/ca4cc1_f417e29b9ebf41a5ac30697fd1c58014.pdf"
+                                        target="_blank">Маленький брехунець</a></button></div>
+                            <div class="advisory__block advisory__block--alternate"> <button> <a
+                                        href="https://7a0c0653-dc36-4429-a10b-f1e9659d743e.filesusr.com/ugd/ca4cc1_2c428663537e400f96c26ff04639b1af.pdf"
+                                        target="_blank">Агресія у дитини, як боротись?</a></button></div>
+                            <div class="advisory__block"> <button> <a
+                                        href="https://7a0c0653-dc36-4429-a10b-f1e9659d743e.filesusr.com/ugd/ca4cc1_4d13cba4b600433da6847cedc3cb2534.pdf"
+                                        target="_blank">Батькам майбутніх першокласників</a></button></div>
+                            <div class="advisory__block advisory__block--alternate"> <button> <a
+                                        href="https://7a0c0653-dc36-4429-a10b-f1e9659d743e.filesusr.com/ugd/ca4cc1_f8601dc9ad854e60bb8993e2f55e2e15.pdf"
+                                        target="_blank">Паради батькам до підготовки дитини з зубним
+                                        лікарем</a></button></div>
+                            <div class="advisory__block"> <button> <a
+                                        href="https://7a0c0653-dc36-4429-a10b-f1e9659d743e.filesusr.com/ugd/ca4cc1_724a5a7d17114002b0aba21c8ad076ac.pdf"
+                                        target="_blank">Як розповісти дитині про війну</a></button></div>
+                            <div class="advisory__block advisory__block--alternate"> <button> <a
+                                        href="https://7a0c0653-dc36-4429-a10b-f1e9659d743e.filesusr.com/ugd/ca4cc1_c620b472a05a4210ba67dcd332ff81ca.pdf"
+                                        target="_blank">Безпека дитини влітку</a></button></div>
+                            <div class="advisory__block"> <button> <a
+                                        href="https://7a0c0653-dc36-4429-a10b-f1e9659d743e.filesusr.com/ugd/ca4cc1_3f160ae9f1cd49d4a4840ed38ccf445e.pdf"
+                                        target="_blank">Правила безпечної поведінки з тваринами</a></button></div>
+                            <div class="advisory__block advisory__block--alternate"> <button> <a
+                                        href="https://7a0c0653-dc36-4429-a10b-f1e9659d743e.filesusr.com/ugd/ca4cc1_5bba753add46407997e57cf332574ac9.pdf"
+                                        target="_blank">Правила поведінки під час природнього лиха</a></button></div>
+                            <div class="advisory__block"> <button> <a
+                                        href="https://7a0c0653-dc36-4429-a10b-f1e9659d743e.filesusr.com/ugd/0a4a23_4af996a700bd4e0aba220e1870d51e1e.pdf"
+                                        target="_blank">Усі діти різні</a></button></div>
+                        </div>
+                        <div id="load-more">Більше</div>
+                    </div>
+                </div>
+            </section>
+            <!DOCTYPE html>
+            <section class="footer" id="footer">
+                <div class="container">
+                    <div class="footer__wrapper">
+                        <div class="footer__links"> <a href="#!" class="footer__logo contactsLogo">Дитячий садок
+                                №28</a><span class="footer__wasp"></span>
+                            <div class="footer__social"><a href="#!" class="footer__inst"><i
+                                        class="ri-instagram-line"></i></a><a
+                                    href="https://www.facebook.com/profile.php?id=100035120799894" target="_blank"
+                                    class="footer__facebook"><i class="ri-facebook-line"></i></a><a
+                                    href="https://www.youtube.com/channel/UC8O8dt3Q4MQjUlRnzGh3XqA" target="_blank"
+                                    class="footer__youtube"><i class="ri-youtube-fill"></i></a></div>
+                        </div>
+                        <div class="footer__contacts">
+                            <h4 class="contactsOur">Наші контакти</h4>
+                            <div class="contacts">
+                                <div class="contact-item">
+                                    <p>+38 033 226 46 93</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__graph">
+                            <h4 class="contactsSchedule">Графік роботи</h4>
+                            <div class="graphs">
+                                <p><span>Пн-Пт: (Mon-Fri)</span> 7:40–19:30</p>
+                                <p><span>Сб: (Sat)</span> Вихідний (Weekend)</p>
+                                <p><span>Нд (Sun) —</span> Вихідний (Weekend)</p>
+                            </div>
+                        </div>
+                        <div class="footer__adress">
+                            <h4 class="contactsAdress">Місце розташування закладу</h4>
+                            <div class="address1">
+                                <p class="address">Волинська область, місто Луцьк, вул. Володимира Івасюка</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section><iframe class="footer__map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31149.88862090032!2d25.297637217106615!3d50.742652972262036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47259998b02296dd%3A0xcea194cb635692c8!2z0JTQuNGC0Y_Rh9C40Lkg0YHQsNC00L7QuiDihJYyOCAi0JLRg9C70LjQuiI!5e0!3m2!1suk!2sua!4v1713211018711!5m2!1suk!2sua"
+                width="350" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </div>
+    <script src="./js/parents.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="./js/translations.bundle.js"></script>
+    <script src="./docs/js/index.bundle.js" async></script>
+</body>
+
+</html>
